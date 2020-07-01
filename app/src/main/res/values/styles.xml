@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Base application theme.
+        <item name="android:fontFamily">@font/dank_mono_regular</item>
+         -->
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="hintTextColor">@android:color/darker_gray</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>

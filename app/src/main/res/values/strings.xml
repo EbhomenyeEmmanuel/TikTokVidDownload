@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TikTokVidDownload</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rate">Rate</string>
+    <string name="about_app">About App</string>
+    <string name="how_to_download">How to Download</string>
+    <string name="paste_tiktok_url">Paste TikTok URL</string>
+    <string name="paste_link">Paste Link</string>
+    <string name="download">Download</string>
+    <string name="go_to_tiktok">Go To TikTok</string>
+</resources>

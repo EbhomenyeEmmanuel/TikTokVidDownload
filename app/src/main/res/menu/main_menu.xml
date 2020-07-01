@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/rate"
+        android:icon="@drawable/positive_vote"
+        android:title="@string/rate"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/tiktokIcon"
+        android:icon="@drawable/tik_tok"
+        android:title="@string/go_to_tiktok"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/aboutApp"
+        android:title="@string/about_app"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/howToDownload"
+        android:title="@string/how_to_download"
+        app:showAsAction="ifRoom" />
+</menu>
