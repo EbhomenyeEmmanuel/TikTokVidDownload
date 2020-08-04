@@ -45,8 +45,7 @@ class HomeFragment : Fragment(), UrlValidationCallback {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate<FragmentHomeBinding>(inflater, R.layout.fragment_home, container,false )
         // Obtain ViewModel from ViewModelProviders
-        val _viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-        _viewModel.urlValidationCallBack = this
+        val _viewModel = ViewModelProvider(this, HomeViewModelFactory(this)).get(HomeViewModel::class.java)
         binding.viewModel = _viewModel
         return binding.root
     }

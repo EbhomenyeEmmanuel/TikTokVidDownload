@@ -7,14 +7,9 @@ import androidx.lifecycle.ViewModel
 import com.esq.tiktokviddownload.model.UrlModel
 import com.esq.tiktokviddownload.model.UrlValidationCallback
 
-class HomeViewModel() : ViewModel() {
-    private var mTikTokUrl: UrlModel
+class HomeViewModel( private var urlValidationCallBack: UrlValidationCallback,  private var mTikTokUrl: UrlModel) : ViewModel() {
 
-    init {
-        mTikTokUrl = UrlModel()
-    }
     val TAG = HomeViewModel::class.simpleName
-    var urlValidationCallBack: UrlValidationCallback? = null
 
     fun getUrlTextWatcher(): TextWatcher? {
         return object : TextWatcher {
@@ -44,9 +39,9 @@ class HomeViewModel() : ViewModel() {
         val isValidUrl: Boolean = mTikTokUrl.isValidTikTokUrl
         val validUrl: String = mTikTokUrl.url
         if (isValidUrl) {
-            urlValidationCallBack?.onCorrectUrl(validUrl)
+            urlValidationCallBack.onCorrectUrl(validUrl)
         } else {
-            urlValidationCallBack?.onIncorrectUrl("InValid Url")
+            urlValidationCallBack.onIncorrectUrl("InValid Url")
         }
     }
 
